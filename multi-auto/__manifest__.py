@@ -25,15 +25,15 @@ It's very suitable for accessories that works on multiple type of product which 
 
     # any module necessary for this one to work correctly
     'depends': ['base','point_of_sale','stock'],
+    'images': ['static/description/banner.png'],
+
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        
-    'images': ['static/description/banner.png'],
-        
+                
     ],
     # only loaded in demonstration mode
     'demo': [
