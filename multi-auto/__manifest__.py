@@ -32,9 +32,7 @@ It's very suitable for accessories that works on multiple type of product which 
         'views/views.xml',
         'views/templates.xml',
         
-    "images": [
-        'static/description/banner.png'
-    ],
+    'images': ['static/description/banner.png'],
         
     ],
     # only loaded in demonstration mode
