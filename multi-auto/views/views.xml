@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+
+        <record id="product_template_form_view" model="ir.ui.view">
+            <field name="name">product.template  .form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="point_of_sale.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='pos_categ_id']" position="after">
+                    <field name="pos_categ_ids" attrs="{'invisible': [('is_related', '=', False)]}" widget="many2many_tags"/>
+                </xpath>
+                <xpath expr="//button[@name='toggle_active']" position="after">
+                        <button name="related_button" type="object" class="oe_stat_button"  icon="fa-random">
+                            <field name="is_related" widget="boolean_button" options='{"terminology": {
+                                "string_true": "Related",
+                                "string_false": "Non Related",
+                            }}'/>
+                        </button>
+
+<!--                    <div>-->
+<!--                        <field name="is_related"/>-->
+<!--                        <label for="is_related"/>-->
+<!--                    </div>-->
+
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
