@@ -12,7 +12,7 @@ It's very suitable for accessories that works on multiple type of product which 
     'website': "https://www.linkedin.com/in/mohamed-fouad1995/",
     'application': True,
 
-    'price': '15',
+    'price': '20',
     "currency": 'USD',
     "license": "OPL-1",
     'post_init_hook': '_auto_clean_cache_when_installed',
