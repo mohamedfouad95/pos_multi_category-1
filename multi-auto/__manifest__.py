@@ -14,6 +14,8 @@ It's very suitable for accessories that works on multiple type of product which 
 
     'price': '15',
     "currency": 'USD',
+    "license": "OPL-1",
+    'post_init_hook': '_auto_clean_cache_when_installed',
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
